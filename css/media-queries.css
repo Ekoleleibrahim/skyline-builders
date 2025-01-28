@@ -1,0 +1,45 @@
+@media (max-width: 1280px) {
+    /* Section two */
+    #section-two .grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        gap: 20px;
+    }
+}
+@media (max-width: 1024px) {
+    #section-main,
+    #section-two{
+        padding: 50px 24px;
+    }
+
+    /* Section principal */
+    #section-main .flex{
+        flex-direction: column;
+    }
+
+    #section-two .grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        gap: 20px;
+    }
+}
+/* Pour les écrans de moins de 640px, nos styles ci-dessous seronts appliqués*/
+@media (max-width: 640px) {
+    /* Partie header du site*/
+    .banniere{
+        background-position: center;
+    }
+    #header-main .flex div:nth-child(3){
+        display: none;
+    }
+
+    /* Section two */
+    #section-two .grid{
+        grid-template-columns: 100%;
+        gap: 20px;
+    }
+    #section-two .grid section:nth-child(1){
+        grid-column: auto;
+        grid-row: auto;
+    }
+}

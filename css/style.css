@@ -43,7 +43,19 @@ h1{
 h2{
     font-size: 40px;
     font-family: poppinsBold, sans-serif;
+}
+h3{
+    font-size: 30px;
+    font-family: poppinsMedium, sans-serif;
+    margin: 18px 0;
+}
+h2,
+h3{
     line-height: 1.2;
+}
+img{
+    width: 100%;
+    object-fit: cover;
 }
 p{
     line-height: 1.2;
@@ -70,6 +82,9 @@ input{
 .flex{
     display: flex;
     align-items: center;
+}
+.grid{
+    display: grid;
 }
 
 /* Partie header du site */
@@ -155,7 +170,7 @@ nav ul.flex li a:hover{
     color: var(--white);
 }
 #section-main .ctn-btn{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 #section-main .ctn-btn a{
     color: var(--white);
@@ -165,4 +180,72 @@ nav ul.flex li a:hover{
 }
 #section-main .ctn-btn a svg{
     width: 16px;
+}
+
+/* Section two */
+#section-two{
+    padding: 30px;
+    background-color: var(--gray);
+}
+#section-two .grid{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+#section-two .grid section:nth-child(1){
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+#section-two .grid section:nth-child(2) img,
+#section-two .grid section:nth-child(3) img,
+#section-two .grid section:nth-child(4) img,
+#section-two .grid section:nth-child(5) img,
+#section-two .grid section:nth-child(6) img,
+#section-two .grid section:nth-child(7) img{
+    max-width: 80px;
+    width: 100%;
+    min-height: 80px;
+}
+#section-two .grid section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--white);
+    padding: 20px;
+    border-radius: 4px;
+    background-color: var(--grey);
+    transition: all 400ms;
+}
+#section-two .grid section:hover{
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    box-shadow: 0 0 2px var(--black);
+}
+#section-two .grid section p{
+    font-size: 18px;
+}
+#section-two .grid section  a{
+    display: inline-flex;
+    gap: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#section-two .grid section:hover  a{
+    color: var(--white);
+}
+#section-two .grid section a svg{
+    width: 16px;
+}
+#section-two .grid section .flex{
+    margin-top: 50px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#section-two .grid section img{
+    border-radius: 4px;
+    max-width: 150px;
+    width: 100%;
+    min-height: 150px;
 }
