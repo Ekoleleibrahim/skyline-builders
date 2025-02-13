@@ -348,14 +348,6 @@ nav ul.flex li a:hover{
     animation-timeline: view();
     animation-range: entry;
 }
-#section-two .grid section:nth-child(2) img,
-#section-two .grid section:nth-child(3) img,
-#section-two .grid section:nth-child(4) img,
-#section-two .grid section:nth-child(5) img,
-#section-two .grid section:nth-child(6) img,
-#section-two .grid section:nth-child(7) img{
-    width: 98px;
-}
 #section-two .grid section{
     display: flex;
     flex-direction: column;
@@ -470,4 +462,5 @@ nav ul.flex li a:hover{
 }
 #section-three .grid section img{
     border-radius: 4px;
+    height: 260px;
 }

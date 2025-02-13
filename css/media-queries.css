@@ -73,4 +73,8 @@
         grid-template-rows: min-content min-content;
         gap: 40px 20px;
     }
+    #section-three .grid section img{
+        border-radius: 4px;
+        height: auto;
+    }
 }
