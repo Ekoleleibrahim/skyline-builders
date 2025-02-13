@@ -37,13 +37,10 @@ body{
     overflow-x: hidden;
 }
 h1{
-    font-size: 80px;
+    font-size: 60px;
     font-family: poppinsBold, sans-serif;
     text-transform: capitalize;
-    line-height: 1.2;
     margin-bottom: 12px;
-    -webkit-animation: display-top 400ms ease-in-out;
-    animation: display-top 800ms ease-in-out;
 }
 h2{
     font-size: 40px;
@@ -51,11 +48,16 @@ h2{
 }
 h3{
     font-size: 30px;
-    font-family: poppinsMedium, sans-serif;
     margin: 18px 0;
 }
+h3,
+h4{
+    font-family: poppinsMedium, sans-serif;
+}
+h1,
 h2,
-h3{
+h3,
+h4{
     line-height: 1.2;
 }
 img{
@@ -65,8 +67,11 @@ img{
 p{
     line-height: 1.2;
 }
+.text-gray{
+    color: var(--gray);
+}
 svg{
-    width: 24px;
+    width: 22px;
 }
 a{
     text-decoration: none;
@@ -90,6 +95,10 @@ input{
 }
 .grid{
     display: grid;
+}
+
+#section-three{
+    padding: 100px 40px;
 }
 
 /* Partie header du site */
@@ -227,6 +236,11 @@ nav ul.flex li a:hover{
     margin-bottom: 150px;
     text-align: center;
 }
+#section-main header h1{
+    font-size: 80px;
+    -webkit-animation: display-top 400ms ease-in-out;
+    animation: display-top 800ms ease-in-out;
+}
 #section-main header p{
     font-family: poppinsMedium, sans-serif;
     -webkit-animation: display-top 400ms ease-in-out;
@@ -293,44 +307,44 @@ nav ul.flex li a:hover{
 #section-two .grid section:nth-child(1){
     grid-column: 1/3;
     grid-row: 1/2;
-    -webkit-animation: display-bottom 1.3s 200ms ease-in-out backwards;
-    animation: display-bottom 1.3s 200ms ease-in-out backwards;
+    -webkit-animation: display-bottom 1.3s ease-in-out backwards;
+    animation: display-bottom 1.3s ease-in-out backwards;
     animation-timeline: view();
     animation-range: entry;
 }
 #section-two .grid section:nth-child(2){
-    -webkit-animation: display-bottom 1.3s 600ms  ease-in-out backwards;
-    animation: display-bottom 1.3s 600ms ease-in-out backwards;
+    -webkit-animation: display-bottom 1.3s ease-in-out backwards;
+    animation: display-bottom 1.3s ease-in-out backwards;
     animation-timeline: view();
     animation-range: entry;
 }
 #section-two .grid section:nth-child(3){
-    -webkit-animation: display-bottom 1.3s 1000ms  ease-in-out backwards;
-    animation: display-bottom 1.3s 1000ms ease-in-out backwards;
+    -webkit-animation: display-bottom 1.3s  ease-in-out backwards;
+    animation: display-bottom 1.3s ease-in-out backwards;
     animation-timeline: view();
     animation-range: entry;
 }
 #section-two .grid section:nth-child(4){
-    -webkit-animation: display-bottom 1.3s 1400ms  ease-in-out backwards;
-    animation: display-bottom 1.3s 1400ms ease-in-out backwards;
+    -webkit-animation: display-bottom 1.3s  ease-in-out backwards;
+    animation: display-bottom 1.3s ease-in-out backwards;
     animation-timeline: view();
     animation-range: entry;
 }
 #section-two .grid section:nth-child(5){
-    -webkit-animation: display-bottom 1.3s 1800ms  ease-in-out backwards;
-    animation: display-bottom 1.3s 1800ms ease-in-out backwards;
+    -webkit-animation: display-bottom 1.3s  ease-in-out backwards;
+    animation: display-bottom 1.3s ease-in-out backwards;
     animation-timeline: view();
     animation-range: entry;
 }
 #section-two .grid section:nth-child(6){
-    -webkit-animation: display-bottom 1.3s 2000ms  ease-in-out backwards;
-    animation: display-bottom 1.3s 2000ms ease-in-out backwards;
+    -webkit-animation: display-bottom 1.3s ease-in-out backwards;
+    animation: display-bottom 1.3s ease-in-out backwards;
     animation-timeline: view();
     animation-range: entry;
 }
 #section-two .grid section:nth-child(7){
-    -webkit-animation: display-bottom 1.3s 2200ms  ease-in-out backwards;
-    animation: display-bottom 1.3s 2200ms ease-in-out backwards;
+    -webkit-animation: display-bottom 1.3s  ease-in-out backwards;
+    animation: display-bottom 1.3s ease-in-out backwards;
     animation-timeline: view();
     animation-range: entry;
 }
@@ -340,9 +354,7 @@ nav ul.flex li a:hover{
 #section-two .grid section:nth-child(5) img,
 #section-two .grid section:nth-child(6) img,
 #section-two .grid section:nth-child(7) img{
-    max-width: 80px;
-    width: 100%;
-    min-height: 80px;
+    width: 98px;
 }
 #section-two .grid section{
     display: flex;
@@ -369,6 +381,9 @@ nav ul.flex li a:hover{
     font-weight: bold;
     text-transform: uppercase;
 }
+#section-two .grid section  a:hover svg{
+    padding-left: 3px;
+}
 #section-two .grid section:hover  a{
     color: var(--white);
 }
@@ -385,5 +400,74 @@ nav ul.flex li a:hover{
     border-radius: 4px;
     max-width: 150px;
     width: 100%;
-    min-height: 100px;
+}
+
+/* Section three */
+#section-three .section-three-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#section-three header h1{
+    margin-bottom: 30px;
+}
+#section-three .flex-filter-section{
+    justify-content: space-between;
+}
+#section-three .flex-filter-section .flex{
+    gap: 20px;
+    font-weight: bold;
+}
+#section-three .flex-filter-section .flex .text-gray{
+    color: var(--gray);
+}
+#section-three .flex-filter-section .flex .text-gray:hover{
+    color: var(--black);
+}
+#section-three .flex-filter-section div:nth-child(3) a{
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+}
+#section-three .flex-filter-section div:nth-child(3) a:hover svg{
+    padding-left: 3px;
+}
+.flex-filter-section div:nth-child(3) a svg{
+    height: 16px;
+}
+#section-three .grid{
+    margin: 0 20px;
+    grid-template-columns: repeat(4, 24.99%);
+    grid-template-rows: min-content min-content;
+    gap: 40px 20px;
+}
+#section-three .grid div.animation-display:nth-child(1),
+#section-three .grid div.animation-display:nth-child(2),
+#section-three .grid div.animation-display:nth-child(3),
+#section-three .grid div.animation-display:nth-child(4){
+    -webkit-animation: display-left 1.3s ease-in-out;
+    animation: display-left 1.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry;
+}
+#section-three .grid div.animation-display:nth-child(5),
+#section-three .grid div.animation-display:nth-child(6),
+#section-three .grid div.animation-display:nth-child(7),
+#section-three .grid div.animation-display:nth-child(8){
+    -webkit-animation: display-right 1.3s ease-in-out;
+    animation: display-right 1.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry;
+}
+#section-three .grid section header,
+#section-three .grid section h4{
+    margin-bottom: 4px;
+}
+#section-three .grid section h4{
+    letter-spacing: -1px;
+}
+#section-three .grid section p{
+    font-weight: bold;
+}
+#section-three .grid section img{
+    border-radius: 4px;
 }
