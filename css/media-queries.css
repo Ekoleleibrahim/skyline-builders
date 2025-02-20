@@ -12,6 +12,7 @@
         grid-template-rows: min-content min-content;
         gap: 40px 20px;
     }
+    
 }
 @media (max-width: 1024px) {
     #section-main,
@@ -40,10 +41,27 @@
     #section-three .flex-filter-section{
         gap: 30px;
     }
+    /* Section Latest News */
+    #section-latest-news .grid-one-latest{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    #section-latest-news .grid .one-lastest-blockthree{
+        grid-column: 1/3;
+    }
+    /* Footer du site */
+    footer .flex-about-contact{
+        margin: 0 150px;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 80px;
+    }
 }
 /* Pour les écrans de moins de 640px, nos styles ci-dessous seronts appliqués*/
 @media (max-width: 640px) {
-    #section-three{
+    #section-three,
+    #section-latest-news{
         padding: 100px 24px;
     }
     /* Partie header du site*/
@@ -66,6 +84,7 @@
     /* Section three */
     #section-three .flex-filter-section{
         flex-wrap: wrap;
+        gap: 10px;
     }
     #section-three .grid{
         margin: 0 0;
@@ -76,5 +95,29 @@
     #section-three .grid section img{
         border-radius: 4px;
         height: auto;
+    }
+    /* Section Latest News */
+    #section-latest-news .grid-one-latest{
+        grid-template-columns: 100%;
+        gap: 80px;
+    }
+    #section-latest-news .grid .one-lastest-blockthree{
+        grid-column: 1/1;
+    }
+    #section-latest-news .grid .one-lastest-blockone,
+    #section-latest-news .grid .one-lastest-blocktwo,
+    #section-latest-news .grid .one-lastest-blockthree{
+        gap: 20px;
+    }
+    #section-latest-news .grid div.link-all-article{
+        align-self: center;
+    }
+    /* Footer du site */
+    footer .flex-about-contact{
+        margin: 0 24px;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 80px;
     }
 }
